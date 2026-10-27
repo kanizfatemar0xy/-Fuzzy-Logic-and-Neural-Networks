@@ -1,4 +1,13 @@
-# Password Strength Checker using Fuzzy Logic
+# 🔐 Password Strength Checker using Fuzzy Logic
+
+![Python](https://img.shields.io/badge/Python-Programming-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-Data-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557C?style=for-the-badge)
+
+---
+
+## 🔎 About the Project
 
 This project is a **Password Strength Checker** that analyses the strength of a given password based on factors such as **length, complexity, and character diversity**.
 
@@ -8,25 +17,31 @@ Using **Fuzzy Logic**, the system performs password strength analysis by applyin
 
 For example:
 
-- A shorter password is considered weaker and receives a value closer to **0**.
-- A longer and more complex password is considered stronger and receives a value closer to **1**.
+- 🔴 A shorter password is considered weaker and receives a value closer to **0**.
+- 🟢 A longer and more complex password is considered stronger and receives a value closer to **1**.
 
-## My Contribution
+---
+
+## 👩‍💻 My Contribution
 
 This repository contains the work completed by **Kaniz Fatema Roxy** as part of a university project.
 
 My work focused on the implementation and analysis of the password strength checking system using fuzzy logic.
 
-## Technologies Used
+---
 
-- Python
-- Jupyter Notebook
-- NumPy
-- Scikit-Fuzzy
-- Matplotlib
-- Fuzzy Logic
+## 🛠️ Technologies Used
 
-## How It Works
+- 🐍 Python
+- 📓 Jupyter Notebook
+- 🔢 NumPy
+- 🧠 Scikit-Fuzzy
+- 📊 Matplotlib
+- 🔐 Fuzzy Logic
+
+---
+
+## ⚙️ How It Works
 
 1. A password is provided as input.
 2. The system analyses characteristics such as password length and complexity.
@@ -34,19 +49,23 @@ My work focused on the implementation and analysis of the password strength chec
 4. A password strength value is calculated.
 5. The result indicates whether the password is relatively weak or strong.
 
-## Project File
+---
+
+## 📁 Project File
 
 The main implementation is available in:
 
 `Password Strength Checker.ipynb`
 
-## Purpose
+---
+
+## 🎯 Purpose
 
 The purpose of this project was to explore how **fuzzy logic can be applied to password strength evaluation**.
 
-## Author
+---
 
-**Kaniz Fatema Roxy**
+## 👩‍💻 Author
 
-Computer Science and Engineering  
-University Project
+**Kaniz Fatema Roxy**  
+Computer Science and Engineering
