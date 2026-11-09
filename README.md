@@ -1,8 +1,30 @@
-# Password Strength Checker — Fuzzy Logic Project
+# Fuzzy Password Strength Checker | Python
 
-[![Python tests](https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks/actions/workflows/python-tests.yml/badge.svg)](https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks/actions/workflows/python-tests.yml)
+[![Python unit tests](https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks/actions/workflows/python-tests.yml/badge.svg)](https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks/actions/workflows/python-tests.yml)
 
-An educational exploration of password-length and character-category features with fuzzy membership functions, developed by **Kaniz Fatema Roxy**.
+**Python · Jupyter · NumPy · Fuzzy membership concepts · Unit testing**
+
+An educational password-strength *demonstration* by **Kaniz Fatema Roxy**, combining an original scikit-fuzzy university notebook with an independently testable command-line example.
+
+**[👩‍💻 Developer portfolio](https://kanizfatemar0xy.github.io/travel-website-project/portfolio.html)** · **[Python source](password_meter.py)** · **[Unit tests](tests/test_password_meter.py)** · **[Notebook](Password%20Strength%20Checker.ipynb)**
+
+## What reviewers can see
+
+| Focus | Evidence |
+| --- | --- |
+| Python fundamentals | Password-feature extraction and conditional logic |
+| Interpretable heuristics | Illustrative fuzzy weak / medium / strong memberships |
+| Testing | Synthetic inputs, isolated unit tests and CI |
+| User privacy | CLI input is hidden; the app does not store or transmit entered strings |
+
+**Quick run** (Python 3):
+\`\`\`bash
+python password_meter.py
+python -m unittest discover -s tests -v
+\`\`\`
+
+> **Important:** This does **not** estimate attack cost or check for breached credentials and must not be used as a production password-security checker. Never enter real passwords into public demos or shared notebooks.
+
 
 ## Two ways to explore
 1. **`Password Strength Checker.ipynb`** — the original university scikit-fuzzy/Jupyter notebook, kept as an archival demonstration. It contains an interactive password prompt. **Use dummy strings, never real passwords.**
