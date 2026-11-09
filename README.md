@@ -1,46 +1,60 @@
-# Fuzzy Password Strength Checker | Python
+# Fuzzy Password Strength Checker — Python & Fuzzy Logic
 
 [![Python unit tests](https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks/actions/workflows/python-tests.yml/badge.svg)](https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks/actions/workflows/python-tests.yml)
 
-**Python · Jupyter · NumPy · Fuzzy membership concepts · Unit testing**
+**Python · Jupyter Notebook · scikit-fuzzy · Unit Testing**
 
-An educational password-strength *demonstration* by **Kaniz Fatema Roxy**, combining an original scikit-fuzzy university notebook with an independently testable command-line example.
+An educational programming project by **Kaniz Fatema Roxy** exploring how password features can be represented using fuzzy membership concepts. It contains the original university notebook and a separate, lightweight Python implementation with automated tests.
 
-**[👩‍💻 Developer portfolio](https://kanizfatemar0xy.github.io/travel-website-project/portfolio.html)** · **[Python source](password_meter.py)** · **[Unit tests](tests/test_password_meter.py)** · **[Notebook](Password%20Strength%20Checker.ipynb)**
+**[View the Python implementation](password_meter.py)** · **[Open the notebook](Password%20Strength%20Checker.ipynb)** · **[See tests](tests/test_password_meter.py)** · **[Developer portfolio](https://kanizfatemar0xy.github.io/travel-website-project/portfolio.html)**
 
-## What reviewers can see
+## What the project demonstrates
 
-| Focus | Evidence |
+| Area | Example |
 | --- | --- |
-| Python fundamentals | Password-feature extraction and conditional logic |
-| Interpretable heuristics | Illustrative fuzzy weak / medium / strong memberships |
-| Testing | Synthetic inputs, isolated unit tests and CI |
-| User privacy | CLI input is hidden; the app does not store or transmit entered strings |
+| Python fundamentals | Input validation, character categorisation, functions and dataclasses |
+| Feature engineering | Length, character groups and unique-character ratio |
+| Fuzzy concepts | Weak, medium and strong membership values |
+| Testing | Synthetic test strings and repeatable unit tests |
+| Safe interaction | Terminal input hidden using `getpass` |
 
-**Quick run** (Python 3):
+## Getting started
+
+**Option 1 — Python CLI (no third-party dependencies):**
+
 ```bash
 python password_meter.py
+```
+
+The program asks for a **dummy test string** and prints an illustrative score and category. Never enter a password you actually use.
+
+**Option 2 — Original Jupyter notebook:**
+
+```bash
+python -m pip install -r requirements.txt
+jupyter notebook
+```
+
+Open `Password Strength Checker.ipynb` in Jupyter. It is an archived teaching notebook with scikit-fuzzy membership functions, plots and notebook-specific commands.
+
+## Run automated checks
+
+```bash
 python -m unittest discover -s tests -v
 ```
 
-> **Important:** This does **not** estimate attack cost or check for breached credentials and must not be used as a production password-security checker. Never enter real passwords into public demos or shared notebooks.
+GitHub Actions runs these unit tests on the Python demonstration module. The original notebook has **not** been fully validated by the same automated suite.
 
+## Project structure
 
-## Two ways to explore
-1. **`Password Strength Checker.ipynb`** — the original university scikit-fuzzy/Jupyter notebook, kept as an archival demonstration. It contains an interactive password prompt. **Use dummy strings, never real passwords.**
-2. **`password_meter.py`** — a small standalone, testable, Python standard-library implementation that demonstrates fuzzy weak/medium/strong memberships. Its scoring formula is deliberately simplified and **is not numerically identical to the original notebook**.
+- [`password_meter.py`](password_meter.py) — simplified, testable Python CLI
+- [`Password Strength Checker.ipynb`](Password%20Strength%20Checker.ipynb) — original university notebook
+- [`tests/`](tests) — automated tests
+- [`requirements.txt`](requirements.txt) — notebook dependencies
+- [`.github/workflows/python-tests.yml`](.github/workflows/python-tests.yml) — continuous integration
 
-## Run safely
-```bash
-python password_meter.py
-python -m unittest discover -s tests -v
-```
-The terminal uses `getpass` to avoid echoing example input. Tests only use synthetic strings. No credentials are logged, stored, or transmitted.
+## Limitations and security
 
-### Run the archival notebook
-Use Python 3, Jupyter, NumPy, Matplotlib and scikit-fuzzy; install requirements with `pip install -r requirements.txt`. Some notebook cells may have old output/Colab-specific commands; execution has not been certified as fully reproducible in every environment.
+This is **not a real-world password-security assessment tool**. Its score is a teaching heuristic, not an estimate of guessing cost, breach exposure or resistance to targeted attacks. The CLI and notebook use **different scoring methods** and should not be expected to produce identical numeric results. Use dummy data in both.
 
-## Limitations
-A high result **does not prove** that a password is safe. This example does not check data breaches, dictionaries, personal context, adversarial patterns or real-world attack costs. Use a reputable, breach-aware estimator for real decisions and enable MFA.
-
-**Author:** [Kaniz Fatema Roxy](https://github.com/kanizfatemar0xy)
+**Author:** [Kaniz Fatema Roxy](https://github.com/kanizfatemar0xy) · [Portfolio](https://kanizfatemar0xy.github.io/travel-website-project/portfolio.html) · [LinkedIn](https://www.linkedin.com/in/kaniz-fatema-roxy)
