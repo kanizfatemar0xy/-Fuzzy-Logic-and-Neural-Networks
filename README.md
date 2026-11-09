@@ -18,10 +18,10 @@ An educational password-strength *demonstration* by **Kaniz Fatema Roxy**, combi
 | User privacy | CLI input is hidden; the app does not store or transmit entered strings |
 
 **Quick run** (Python 3):
-\`\`\`bash
+```bash
 python password_meter.py
 python -m unittest discover -s tests -v
-\`\`\`
+```
 
 > **Important:** This does **not** estimate attack cost or check for breached credentials and must not be used as a production password-security checker. Never enter real passwords into public demos or shared notebooks.
 
