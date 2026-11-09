@@ -1,71 +1,24 @@
-# 🔐 Password Strength Checker using Fuzzy Logic
+# Password Strength Checker — Fuzzy Logic Project
 
-![Python](https://img.shields.io/badge/Python-Programming-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-Data-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557C?style=for-the-badge)
+[![Python tests](https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks/actions/workflows/python-tests.yml/badge.svg)](https://github.com/kanizfatemar0xy/-Fuzzy-Logic-and-Neural-Networks/actions/workflows/python-tests.yml)
 
----
+An educational exploration of password-length and character-category features with fuzzy membership functions, developed by **Kaniz Fatema Roxy**.
 
-## 🔎 About the Project
+## Two ways to explore
+1. **`Password Strength Checker.ipynb`** — the original university scikit-fuzzy/Jupyter notebook, kept as an archival demonstration. It contains an interactive password prompt. **Use dummy strings, never real passwords.**
+2. **`password_meter.py`** — a small standalone, testable, Python standard-library implementation that demonstrates fuzzy weak/medium/strong memberships. Its scoring formula is deliberately simplified and **is not numerically identical to the original notebook**.
 
-This project is a **Password Strength Checker** that analyses the strength of a given password based on factors such as **length, complexity, and character diversity**.
+## Run safely
+```bash
+python password_meter.py
+python -m unittest discover -s tests -v
+```
+The terminal uses `getpass` to avoid echoing example input. Tests only use synthetic strings. No credentials are logged, stored, or transmitted.
 
-The aim is to determine how secure a password may be against potential attacks.
+### Run the archival notebook
+Use Python 3, Jupyter, NumPy, Matplotlib and scikit-fuzzy; install requirements with `pip install -r requirements.txt`. Some notebook cells may have old output/Colab-specific commands; execution has not been certified as fully reproducible in every environment.
 
-Using **Fuzzy Logic**, the system performs password strength analysis by applying membership functions. The membership function assigns a value between **0 and 1** based on password characteristics.
+## Limitations
+A high result **does not prove** that a password is safe. This example does not check data breaches, dictionaries, personal context, adversarial patterns or real-world attack costs. Use a reputable, breach-aware estimator for real decisions and enable MFA.
 
-For example:
-
-- 🔴 A shorter password is considered weaker and receives a value closer to **0**.
-- 🟢 A longer and more complex password is considered stronger and receives a value closer to **1**.
-
----
-
-## 👩‍💻 My Contribution
-
-This repository contains the work completed by **Kaniz Fatema Roxy** as part of a university project.
-
-My work focused on the implementation and analysis of the password strength checking system using fuzzy logic.
-
----
-
-## 🛠️ Technologies Used
-
-- 🐍 Python
-- 📓 Jupyter Notebook
-- 🔢 NumPy
-- 🧠 Scikit-Fuzzy
-- 📊 Matplotlib
-- 🔐 Fuzzy Logic
-
----
-
-## ⚙️ How It Works
-
-1. A password is provided as input.
-2. The system analyses characteristics such as password length and complexity.
-3. Fuzzy membership functions are applied.
-4. A password strength value is calculated.
-5. The result indicates whether the password is relatively weak or strong.
-
----
-
-## 📁 Project File
-
-The main implementation is available in:
-
-`Password Strength Checker.ipynb`
-
----
-
-## 🎯 Purpose
-
-The purpose of this project was to explore how **fuzzy logic can be applied to password strength evaluation**.
-
----
-
-## 👩‍💻 Author
-
-**Kaniz Fatema Roxy**  
-Computer Science and Engineering
+**Author:** [Kaniz Fatema Roxy](https://github.com/kanizfatemar0xy)
